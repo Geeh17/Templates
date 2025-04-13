@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Agency - Start Bootstrap Theme</title>
+  <title>Agência Web | Desenvolvimento de Sites e Sistemas</title>
 <link rel="icon" href="img/website.png">
 
   <link href="prontos/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -47,23 +47,19 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">SOBRE MIM</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">CONTATO</a>
-          </li> 
         </ul>
       </div>
     </div>
   </nav>
-
+  
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in">OLÁ!</div>
         <div class="intro-heading text-uppercase">PRODUTOS E SERVIÇOS PARA A WEB</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Saiba Mais...</a>
       </div>
     </div>
-  </header>
+  </header>  
 
   <section id="services">
     <div class="container">
@@ -338,23 +334,24 @@
     </div>
   </section>
 
- <footer>
+  <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Geraldo Luiz - 2022</span>
-        </div>
-     
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">HOME</a>
-            </li>
-          </ul>
+        <div class="col-12 text-center">
+          <p class="mb-1">
+            Copyright &copy; Geraldo Luiz - <span id="ano"></span>
+          </p>
+          <p>
+            <a href="#" class="text-decoration-none">
+              <i class="fa fa-home"></i> HOME
+            </a>
+          </p>
         </div>
       </div>
     </div>
   </footer>
+  
+  
 
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
@@ -525,10 +522,6 @@
                 <p class="item-intro text-muted">Deseja obter um auxílio no Design e Criação do site e app?</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
                 <p>Desenvolvimento e Criação</p>
-                <ul class="list-inline">
-                  <li>2022</li>
-                  <li>Categoria: Design</li>
-                </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
                   Fechar Projeto</button>
@@ -542,14 +535,10 @@
 
   <script src="prontos/jquery/jquery.min.js"></script>
   <script src="prontos/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   <script src="prontos/jquery-easing/jquery.easing.min.js"></script>
-
+  <script> document.getElementById("ano").textContent = new Date().getFullYear() </script>
   <script src="js/jqBootstrapValidation.js"></script>
- <script src="js/contact_me.min.js"></script>
-
+  <script src="js/contact_me.min.js"></script>
   <script src="js/agency.min.js"></script>
-
 </body>
-
 </html>
